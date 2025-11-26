@@ -1,6 +1,5 @@
 const API_BASE = "https://portfolio-api-three-black.vercel.app/api/v1";
 
-// --- Obtener proyectos públicos ---
 async function getPublicProjects(itsonId) {
     const res = await fetch(`${API_BASE}/publicProjects/${itsonId}`);
     if (!res.ok) throw new Error("Error al obtener proyectos");
@@ -50,3 +49,4 @@ async function loadProjects() {
 
 
 loadProjects();
+
